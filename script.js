@@ -42,9 +42,10 @@ document.querySelector(".search button").addEventListener("click",function(){
 weather.search();
 });
 // enter key
-document.querySelector(".search button").addEventListener("keyup",function(event){
+document.querySelector(".search-bar").addEventListener("keyup",function(event){
 if(event.key=="Enter"){
     weather.search();
+    console.log("key pressse")
 }   
 });
 
